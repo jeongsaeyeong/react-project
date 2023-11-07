@@ -9,16 +9,13 @@
 - 있는 폴더에 리액트 설치 `npx create-react-app .`
 2. gsap 설치 `npm i gsap`
 3. sass 설치 `npm i sass`
-4. lenis 설치 `npm i @studio-freight/lenis`
+4. lenis 설치 `npm i @studgit io-freight/lenis`
 
 - git에 업로드
 
-git add .   
-git status    
-git commit -m "d"    
-git push -u origin main    
+git add .
+git status
+git commit -m "d"
+git push -u origin master
 
 ### 오류 
-
-main 과 master 두 개의 브런치가 생긴 상태였다. 
-master에는 업로드 되는데 main에는 업로드 되지 않았던 것

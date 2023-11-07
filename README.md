@@ -9,7 +9,7 @@
 - 있는 폴더에 리액트 설치 `npx create-react-app .`
 2. gsap 설치 `npm i gsap`
 3. sass 설치 `npm i sass`
-4. 
+4. lenis 설치 `npm i @studio-freight/lenis`
 
 - git에 업로드
 

@@ -13,10 +13,10 @@
 
 - git에 업로드
 
-git add .
-git status
-git commit -m "d"
-git push -u origin master 
+git add .   
+git status    
+git commit -m "d"    
+git push -u origin main    
 
 ### 오류 
 

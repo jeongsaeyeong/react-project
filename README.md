@@ -24,6 +24,7 @@ git push -u origin main
 이건 git에서는 masterd
 해결방법은 아래와 같다. 
 
+<details>
 <summary>main으로 변경하기</summary>
 - git branch -M main
 
@@ -32,6 +33,7 @@ git push -u origin main
 #### Whitespace 에러
 유닉스 시스템에서는 한 줄의 끝이 LF(Line Feed)로 이루어지는 반면, 윈도우에서는 줄 하나가 CR(Carriage Return)와 LF(Line Feed), 즉 CRLF로 이루어져서 GIt이 혼란을 겪는다. 
 
+<details>
 <summary>해결방법</summary>
 
 - `git config --global core.autocrlf true // 시스템 전체에 적용`

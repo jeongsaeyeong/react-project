@@ -1,8 +1,14 @@
-# vite를 이용한 포트폴리오 사이트 만들기
+# REACT를 이용한 포트폴리오 사이트 만들기
 
-#작업 순서 
-1. 리액트 설치
-2. git에 업로드
+## React(리액트)란?
+
+리액트(React)는 Facebook에서 개발한 자바스크립트 라이브러리로, 사용자 인터페이스(UI)를 구축하기 위한 도구이다. 리액트는 컴포넌트 기반 아키텍처를 사용하며, 재사용 가능하고 관리하기 쉬운 UI 요소를 만드는 데 도움을 주며, 가상 DOM(Virtual DOM)을 활용하여 웹 애플리케이션의 효율성과 성능을 향상시키는데 중점을 두고 있다.
+
+## lenis.js란?
+
+Lenis는 JavaScript로 작성된 오픈 소스 웹 프레임워크이다. Lenis는 웹 애플리케이션 및 API를 개발하기 위해 사용되며 경량화되고 빠른 속도로 동작한다. 간단한 문법과 구조를 제공하여 개발자가 쉽게 웹 애플리케이션을 구축할 수 있게 한다.
+
+# 작업 순서
 
 ## 설치
 1. 폴더를 만들고 리액트 설치 `npx create-react-app 프로젝트 이름`
@@ -12,21 +18,23 @@
 4. lenis 설치 `npm i @studgit io-freight/lenis`
 5. react-router-dom 설치
 
-- git에 업로드
+## git에 업로드
 
-git add .
-git status
-git commit -m "d"
-git push -u origin main
+`git add .`
+`git status`
+`git commit -m "message"`
+`git push -u origin main`
 
 ### 오류 해결 
-#### master 브런치에는 업로드 되는데 main에는 업로드 되지 않는 오류가 있었다.
-이건 git에서는 masterd
-해결방법은 아래와 같다. 
+
+#### master 브런치에는 업로드 되는데 main에는 업로드 되지 않는 오류
+이건 git에서는 master, github에서는 main을 기본으로 하기 때문에 생기는 일이다. 
+따라서 이 둘을 일치시켜주는 작업이 필요하고, 그 해결방법은 아래와 같다. 
 
 <details>
 <summary>main으로 변경하기</summary>
-- git branch -M main
+
+`git branch -M main`
 
 이렇게 하면 된다.
 

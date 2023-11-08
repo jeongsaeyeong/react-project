@@ -1,0 +1,48 @@
+:root {
+    --mainEng-font: "Montserrat";
+    --subEng-font: "Hahmlet";
+    --mainKor-font: "Hahmlet";
+
+    --mainBg-color: #B36933;
+    --suBg-color: #F9E0C3;
+    --suBg-color100: #EECCA3;
+    --suBg-color200: #E8C69D;
+    --suBg-color300: #C4804E;
+    --suBg-color400: #aaaaaa;
+    --suBg-color500: #747474;
+
+    --black: #000;
+    --black100: #222;
+    --black200: #333;
+    --black300: #666;
+    --black400: #888;
+
+    /* 기본 폰트 설정 */
+    font-family: var(--mainEng-font), var(--mainKor-font);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--suBg-color);
+
+    /* 폰트를 부드럽게 렌더링하기 위한 속성  */
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* 아이폰 가로 모드에서 글씨 확대 금지 */
+    -webkit-text-size-adjust: 100%;
+
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+body {
+    color: var(--black);
+    background-color: var(--mainBg-color);
+}

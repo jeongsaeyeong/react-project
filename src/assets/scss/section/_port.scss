@@ -59,14 +59,14 @@
 }
 
 .port__item a img {
-    filter: saturate(0%);
+    filter: saturate(30%);
     margin-bottom: 15px;
     transition: all 0.3s;
     border: 1px solid var(--suBg-color);
 }
 
 .port__item a img:hover {
-    filter: saturate(80%);
+    filter: saturate(100%);
 }
 
 .port__item .title {
@@ -90,6 +90,6 @@
 }
 
 .anothor {
-    background-color: #f1f1f1;
-    color: var(--mainBg-color);
+    background-color: var(--mainBg-color);
+    color: var(--suBg-color);
 }

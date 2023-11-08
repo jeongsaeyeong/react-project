@@ -98,15 +98,16 @@
     height: 1px;
 }
 
+.contact__text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 .contact__text .text {
-    background-color: var(--suBg-color100);
+    text-align: center;
+    background-color: var(--suBg-color);
     width: 100%;
     padding: 10vw 0;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    position: relative;
+    font-size: 1.5rem;
 }

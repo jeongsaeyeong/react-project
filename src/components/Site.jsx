@@ -1,4 +1,6 @@
 import React from 'react'
+import { SiteText } from '../constant'
+console.log(SiteText)
 
 const Site = () => {
     return (
@@ -8,86 +10,28 @@ const Site = () => {
                     Site Coding <em>나의 작업물</em>
                 </div>
                 <div className="site__wrap">
-                    <div className="site__item s1">
-                        <span className="num">1.</span>
-                        <div className="text">
-                            <div>make</div>
-                            <div>site comliant width</div>
-                            <div>webstandard</div>
+                    {SiteText.map((site, key) => (
+                        <div className={`site__item s${key + 1}`} key={key}>
+                            <span className="num">{key + 1}.</span>
+                            <div className="text">
+                                <div>{site.text[0]}</div>
+                                <div>{site.text[1]}</div>
+                                <div>{site.text[2]}</div>
+                            </div>
+                            <h3 className="title">
+                                {site.title}
+                            </h3>
+                            <div className="btn">
+                                <a href={site.code} className="code_btn">code</a>
+                                <a href={site.code} className="view_btn">view</a>
+                            </div>
+                            <div className="info">
+                                <span>{site.info[0]}</span>
+                                <span>{site.info[1]}</span>
+                                <span>{site.info[2]}</span>
+                            </div>
                         </div>
-                        <h3 className="title">
-                            VITE를 이용한 사이트 제작
-                        </h3>
-                        <div className="btn">
-                            <a href="/" className="code_btn">code</a>
-                            <a href="/" className="view_btn">view</a>
-                        </div>
-                        <div className="info">
-                            <span>site coding</span>
-                            <span>production period : two days</span>
-                            <span>use: stack : html4/css, css varriable, vite</span>
-                        </div>
-                    </div>
-                    <div className="site__item s2">
-                        <span className="num">2.</span>
-                        <div className="text">
-                            <div>make</div>
-                            <div>site comliant width</div>
-                            <div>webstandard</div>
-                        </div>
-                        <h3 className="title">
-                            VITE를 이용한 사이트 제작
-                        </h3>
-                        <div className="btn">
-                            <a href="/">code</a>
-                            <a href="/">view</a>
-                        </div>
-                        <div className="info">
-                            <span>site coding</span>
-                            <span>production period : two days</span>
-                            <span>use: stack : html4/css, css varriable, vite</span>
-                        </div>
-                    </div>
-                    <div className="site__item s3">
-                        <span className="num">3.</span>
-                        <div className="text">
-                            <div>make</div>
-                            <div>site comliant width</div>
-                            <div>webstandard</div>
-                        </div>
-                        <h3 className="title">
-                            VITE를 이용한 사이트 제작
-                        </h3>
-                        <div className="btn">
-                            <a href="/">code</a>
-                            <a href="/">view</a>
-                        </div>
-                        <div className="info">
-                            <span>site coding</span>
-                            <span>production period : two days</span>
-                            <span>use: stack : html4/css, css varriable, vite</span>
-                        </div>
-                    </div>
-                    <div className="site__item s4">
-                        <span className="num">4.</span>
-                        <div className="text">
-                            <div>make</div>
-                            <div>site comliant width</div>
-                            <div>webstandard</div>
-                        </div>
-                        <h3 className="title">
-                            VITE를 이용한 사이트 제작
-                        </h3>
-                        <div className="btn">
-                            <a href="/">code</a>
-                            <a href="/">view</a>
-                        </div>
-                        <div className="info">
-                            <span>site coding</span>
-                            <span>production period : two days</span>
-                            <span>use: stack : html4/css, css varriable, vite</span>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </section>

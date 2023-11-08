@@ -53,9 +53,10 @@ git push -u origin main
 ### GSAP의 가로 모드와 REACT의 결합
 - GSAP에서 가로 스크롤을 만들었는데, REACT에서 사용하니 width 값을 인식하지 못하는 경우가 발생했다. 
 - 결국 다른 js파일처럼 연동하지 않고 직접 jsx 파일 안에 작동하도록 코드를 바꾸었다. 
+- horizontalRef.current와 sectionRef.current를 사용하여 DOM 요소에 대한 참조를 설정했다. 이걸 사용하면 각각의 넓이를 인식하여 전달이 가능하다.
 
+<details>
 <summary>REACT에서 사용하지 못하는 이유</summary>
-
 - 가상 돔(Virtual DOM)을 사용하기 때문이다. 코드를 위에서 아래로 읽는 html과는 다르게 내부 구성을 바꾸어 재활용하는 가상 돔 특성상 width 값을 인식하지 못하는 오류가 있는 것 같다. 
 
 ### Firebase 호스팅
